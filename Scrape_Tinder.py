@@ -168,3 +168,8 @@ class Tinder ():
 		return print (
 			"USER DATA \n--------------------------\n Age:  {}\n Name:  {}\n Occupation:  {}\n University Info:  {}\n Distance:  {}\n Song  {}:\n Profile text\n {}".format (
 				age, name, job, uni, dist, song, profile_txt))
+	
+bb = Tinder ()
+bb.login ()
+bb.tutorial ()
+BS (bb.driver.page_source, 'html5lib').find ('div', attrs = {'class': "react-swipeable-view-container"})
