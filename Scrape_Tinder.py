@@ -21,14 +21,15 @@ sleep_val = 2+noise
 small_noise = normal(1.0, 0.65,1)
 micro_sleep = 0.35
 small_sleep = 1 +small_noise
-path = r"C:\webdrivers\chromedriver.exe"
+path = "ENTER_PATH_TO_CHROME_WEBDRIVER"
 chrome_options = webdriver.ChromeOptions()
 prefs = {"profile.default_content_setting_values.notifications" : 2}
 chrome_options.add_experimental_option("prefs",prefs)
 driver = webdriver.Chrome(path, options=chrome_options)
 
-pers_pass = 'ENTER_PASS_HERE'
-pers_mail = 'ENTER_MAIL_HERE'
+pers_mail = 'FB_EMAIL'
+pers_pass = 'FB_PASSWORD'
+
 
 uni_words = ['university', 'bachelor\'s', 'ba', 'ms', 'phd', 'ph.d', 'major', 'postgraduate', 'postgrad', 'grad',
 				 'degree', 'college', 'academy', 'institution', 'school']
